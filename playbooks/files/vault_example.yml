@@ -1,0 +1,14 @@
+# https://www.redhat.com/en/blog/introduction-ansible-vault
+#
+# Use ansible vault to encrypt the real version of this file
+#
+
+# Red Hat Client ID for Analytics
+analytics_client_id: 1223123
+# Red Hat Client Secret for Analytics
+analytics_client_secret: 1212121
+
+# Red Hat Client ID for Subscriptions
+subscripions_client_id: 1223123
+# Red Hat Client Secret for Subscriptions
+subscriptions_client_secret: 1212121

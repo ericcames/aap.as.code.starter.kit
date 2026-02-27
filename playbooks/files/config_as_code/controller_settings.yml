@@ -1,0 +1,8 @@
+---
+controller_settings:
+  settings:
+    REDHAT_USERNAME: "{{ analytics_client_id }}"
+    REDHAT_PASSWORD: "{{ analytics_client_secret }}"
+    INSIGHTS_TRACKING_STATE: true
+    SUBSCRIPTIONS_CLIENT_ID: "{{ subscripions_client_id }}"
+    SUBSCRIPTIONS_CLIENT_SECRET: "{{ subscriptions_client_secret }}"

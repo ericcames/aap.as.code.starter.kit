@@ -1,1 +1,30 @@
-# aap.as.code.starter.kit
+The Ansible Automation Platform Starter Kit
+=============
+
+**Getting started**
+
+1. Ensure that we have the following credentials
+    - Automation Hub - certified
+    - Galaxy Server URL - https://console.redhat.com/api/automation-hub/content/published/
+    - Auth Server URL - https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+    - Credential type - Ansible Galaxy/Automation Hub API Token
+![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/AHcertified.png "certified")
+
+    - Automation Hub - validated
+    - Galaxy Server URL - https://console.redhat.com/api/automation-hub/content/validated/
+    - Auth Server URL - https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+    - Credential type - Ansible Galaxy/Automation Hub API Token
+
+2. Ensure the Galaxy credentials are related to the Default Organization
+![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/orgswithcreds.png "Default Organization")
+
+3. Create your vault credential
+![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/myvault.png "Vault")
+
+4. Create your project
+![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/project.png "aap.as.code")
+
+5. Create a remote vault with your secrets
+
+[Remote Vault](https://raw.githubusercontent.com/ericcames/sourcefiles/refs/heads/main/vault_ames.yml "vault_ames.yml")<br>
+[Example Vault](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/playbooks/files/vault_example.yml "vault_example.yml")<br>

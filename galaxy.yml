@@ -1,0 +1,24 @@
+---
+authors:
+  - Eric Ames (ericcames)
+dependencies:
+  "ansible.posix": ">=2.1.0"
+  "ansible.utils": ">=6.0.0"
+  "ansible.platform": ">=2.6.20250924"
+  "ansible.hub": ">=1.0.2"
+  "ansible.controller": ">=4.7.1"
+  "ansible.eda": ">=2.10.0"
+  "infra.aap_configuration": ">=3.8.0"
+license_file: LICENSE
+name: aap_as_code_start_kit
+description: An AAP CAC start kit.
+namespace: ericcames
+readme: README.md
+repository: https://github.com/ericcames/aap.as.code.starter.kit
+issues: https://github.com/ericcames/aap.as.code.starter.kit/issues
+tags:
+  - ansible
+  - config_as_code
+  - cac
+  - aap
+version: 1.0.0
