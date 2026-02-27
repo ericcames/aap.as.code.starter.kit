@@ -3,7 +3,7 @@ The Ansible Automation Platform Starter Kit
 
 **Getting started**
 
-1. Ensure that we have the following credentials
+1. Ensure that we have a certified credential
     ```
     Automation Hub - certified
     ```
@@ -22,6 +22,7 @@ The Ansible Automation Platform Starter Kit
 
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/AHcertified.png "certified")
 
+2. Ensure that we have a validated credential
     ```
     Automation Hub - validated
     ```
@@ -38,21 +39,21 @@ The Ansible Automation Platform Starter Kit
     https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
     ```
 
-2. Ensure the Galaxy credentials are related to the Default Organization
+3. Ensure the Galaxy credentials are related to the Default Organization
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/orgswithcreds.png "Default Organization")
 
-3. Create your vault credential
+4. Create your vault credential
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/myvault.png "Vault")
 
-4. Create your project
+5. Create your project
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/project.png "aap.as.code")
 
-5. Create a remote vault with your secrets
+6. Create a remote vault with your secrets
 
 [Remote Vault](https://raw.githubusercontent.com/ericcames/sourcefiles/refs/heads/main/vault_ames.yml "vault_ames.yml")<br>
 [Example Vault](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/playbooks/files/vault_example.yml "vault_example.yml")<br>
 
-6. Create your job template
+7. Create your job template
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/newtemplate.png "Setup - AAP - CAC")
 
 Template name
