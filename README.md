@@ -4,6 +4,7 @@ The Ansible Automation Platform Starter Kit
 **Getting started**
 
 1. Ensure that we have a certified credential
+    - Name
     ```
     Automation Hub - certified
     ```
@@ -23,6 +24,7 @@ The Ansible Automation Platform Starter Kit
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/AHcertified.png "certified")
 
 2. Ensure that we have a validated credential
+    - Name
     ```
     Automation Hub - validated
     ```
