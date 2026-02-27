@@ -4,7 +4,9 @@ The Ansible Automation Platform Starter Kit
 **Getting started**
 
 1. Ensure that we have the following credentials
-    - Automation Hub - certified
+    ```
+    Automation Hub - certified
+    ```
     - Galaxy Server URL - https://console.redhat.com/api/automation-hub/content/published/
     - Auth Server URL - https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
     - Credential type - Ansible Galaxy/Automation Hub API Token
