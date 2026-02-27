@@ -51,7 +51,7 @@ The Ansible Automation Platform Starter Kit
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/myvault.png "Vault")
 
 7. Create your project
-![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/project.png "aap.as.code")
+![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/SKproject.png "Project")
 
 8. Create a remote vault with your secrets
 
@@ -59,7 +59,7 @@ The Ansible Automation Platform Starter Kit
 [Example Vault](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/playbooks/files/vault_example.yml "vault_example.yml")<br>
 
 9. Create your job template
-![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/newtemplate.png "Setup - AAP - CAC")
+![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/SKtemplate.png "Setup - AAP - CAC")
 
 Template name
 ```
