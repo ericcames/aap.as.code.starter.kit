@@ -2,8 +2,8 @@ The Ansible Automation Platform Starter Kit
 =============
 
 **Getting started**
-
-1. Ensure that we have a certified credential
+1. [Get Automation Hub Token](https://console.redhat.com/ansible/automation-hub/token/ "Load Token")<br>
+2. Ensure that we have a certified credential
     - Name
     ```
     Automation Hub - certified
