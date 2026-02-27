@@ -58,7 +58,10 @@ The Ansible Automation Platform Starter Kit
 [Remote Vault](https://raw.githubusercontent.com/ericcames/sourcefiles/refs/heads/main/vault_ames.yml "vault_ames.yml")<br>
 [Example Vault](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/playbooks/files/vault_example.yml "vault_example.yml")<br>
 
-9. Create your job template
+9. Create your ansible automation platform credential
+![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/SKcred.png "Cred")
+
+10. Create your job template
 ![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/SKtemplate.png "Setup - AAP - CAC")
 
 Template name
