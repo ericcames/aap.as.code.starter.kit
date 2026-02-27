@@ -74,3 +74,4 @@ Extra variables
 my_remote_vault: >-
   https://raw.githubusercontent.com/ericcames/sourcefiles/refs/heads/main/starterkit_vault.yml
 ```
+11. Launch the job template
