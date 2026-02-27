@@ -21,6 +21,7 @@ The Ansible Automation Platform Starter Kit
     ```
     https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
     ```
+    - API Token
 
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/AHcertified.png "certified")
 
@@ -41,6 +42,7 @@ The Ansible Automation Platform Starter Kit
     ```
     https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
     ```
+    - API Token
 
 5. Ensure the Galaxy credentials are related to the Default Organization
 ![alt text](https://github.com/ericcames/aap.as.code/blob/main/images/orgswithcreds.png "Default Organization")
