@@ -67,5 +67,5 @@ Extra variables
 ```
 my_aap_url: "GETTHISFROMAPD"
 my_remote_vault: >-
-  https://raw.githubusercontent.com/ericcames/sourcefiles/refs/heads/main/vault_ames.yml
+  https://raw.githubusercontent.com/ericcames/sourcefiles/refs/heads/main/starterkit_vault.yml
 ```
