@@ -109,7 +109,7 @@
         GIT_AUTHOR_EMAIL: "{{ git_email | default(omit) }}"
       args:
         chdir: "{{ local_repo }}"
-      ansible.builtin.shell: git commit --amend --all
+      ansible.builtin.shell: git commit --amend --all -m 'removed secret'
 
     - name: Push the changes
       run_once: true
