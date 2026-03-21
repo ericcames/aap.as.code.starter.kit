@@ -46,7 +46,8 @@
 
     - name: Export all objects
       vars:
-        valid_tags: all
+        valid_tags:
+          - controller_projects
       ansible.builtin.include_role:
         name: infra.aap_configuration_extended.filetree_create
 
