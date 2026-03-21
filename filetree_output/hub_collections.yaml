@@ -1,0 +1,33 @@
+---
+hub_collections:
+  - name: rhel_system_roles
+    namespace: redhat
+  - name: hub
+    namespace: ansible
+  - name: utils
+    namespace: ansible
+  - name: posix
+    namespace: ansible
+  - name: eda
+    namespace: ansible
+  - name: platform
+    namespace: ansible
+  - name: controller
+    namespace: ansible
+  - name: aap_configuration
+    namespace: infra
+  - name: podman
+    namespace: containers
+  - name: panos_daily_demo
+    namespace: ericcames
+  - name: general
+    namespace: community
+  - name: windows_daily_demo
+    namespace: ericcames
+  - name: crypto
+    namespace: community
+  - name: hashicorp_daily_demo
+    namespace: ericcames
+  - name: hashi_vault
+    namespace: community
+...

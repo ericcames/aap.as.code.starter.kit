@@ -1,0 +1,11 @@
+---
+controller_credentials:
+  - name: Daily Demo Windows
+    credential_type: Machine
+    organization: IT Service Automation
+    inputs:
+      password: '{{ vaulted_controller_credentials_daily_demo_windows_password }}'
+      username: ec2-user
+      become_method: runas
+      become_username: administrator
+...

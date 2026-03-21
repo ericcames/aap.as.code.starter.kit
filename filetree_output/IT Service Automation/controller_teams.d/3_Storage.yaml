@@ -1,0 +1,9 @@
+---
+aap_teams:
+  - name: Storage
+    description: |-
+      {%- raw -%}
+      The Storage Team
+      {%- endraw -%}
+    organization: IT Service Automation
+...

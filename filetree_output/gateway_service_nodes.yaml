@@ -1,0 +1,23 @@
+---
+gateway_service_nodes:
+  - name: Node gateway
+    address: 0.0.0.0
+    service_cluster: "1"
+    tags: ""
+  - name: Node controller - aap-controller
+    address: aap-controller-service
+    service_cluster: "2"
+    tags: ""
+  - name: Node galaxy - aap-hub
+    address: aap-hub-web-svc
+    service_cluster: "3"
+    tags: ""
+  - name: Node eda - aap-eda
+    address: aap-eda-api
+    service_cluster: "4"
+    tags: eda
+  - name: Node eda event stream - aap-eda
+    address: aap-eda-event-stream
+    service_cluster: "4"
+    tags: eda-event-stream
+...

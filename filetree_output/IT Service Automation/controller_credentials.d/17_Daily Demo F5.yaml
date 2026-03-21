@@ -1,0 +1,13 @@
+---
+controller_credentials:
+  - name: Daily Demo F5
+    description: |-
+      {%- raw -%}
+      ssh key based authentication
+      {%- endraw -%}
+    credential_type: Machine
+    organization: IT Service Automation
+    inputs:
+      username: admin
+      ssh_key_data: '{{ vaulted_controller_credentials_daily_demo_f5_ssh_key_data }}'
+...

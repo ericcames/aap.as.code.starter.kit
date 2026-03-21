@@ -1,0 +1,23 @@
+---
+hub_ee_registries:
+  - name: Red Hat Ecosystem Catalog
+    url: https://registry.redhat.io
+    policy: immediate
+    tls_validation: True
+    client_cert: ""
+    ca_cert: ""
+    download_concurrency: ""
+    proxy_url: ""
+    rate_limit: ""
+    is_indexable: True
+  - name: Red Hat Quay.io
+    url: https://quay.io
+    policy: immediate
+    tls_validation: True
+    client_cert: ""
+    ca_cert: ""
+    download_concurrency: ""
+    proxy_url: ""
+    rate_limit: ""
+    is_indexable: ""
+...

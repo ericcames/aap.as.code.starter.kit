@@ -1,0 +1,12 @@
+---
+controller_credentials:
+  - name: F5 Vault
+    description: |-
+      {%- raw -%}
+      F5 Vault password team default password used
+      {%- endraw -%}
+    credential_type: Vault
+    organization: IT Service Automation
+    inputs:
+      vault_password: '{{ vaulted_controller_credentials_f5_vault_vault_password }}'
+...

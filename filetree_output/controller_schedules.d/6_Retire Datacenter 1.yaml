@@ -1,0 +1,24 @@
+---
+controller_schedules:
+  - name: Retire Datacenter 1
+    description: |-
+      {%- raw -%}
+      Retire DC1 at 6 pm to save money
+      {%- endraw -%}
+    enabled: true
+    unified_job_template: DC1 - Infrastructure Management (Terraform)
+    inventory: Datacenter 1
+    dtstart: "2023-01-02T01:00:00Z"
+    dtend: ""
+    timezone: America/Phoenix
+    rrule: DTSTART;TZID=America/Phoenix:20230101T180000 RRULE:FREQ=DAILY;INTERVAL=1
+    scm_branch: ""
+    forks: 0
+    job_slice_count: 0
+    timeout: 0
+    job_type: ""
+    job_tags: remove
+    skip_tags: ""
+    limit: ""
+    verbosity: 0
+...

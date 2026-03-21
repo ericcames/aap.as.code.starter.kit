@@ -1,0 +1,9 @@
+---
+aap_teams:
+  - name: Server
+    description: |-
+      {%- raw -%}
+      The Server Team
+      {%- endraw -%}
+    organization: IT Service Automation
+...

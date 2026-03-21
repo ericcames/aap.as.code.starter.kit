@@ -1,0 +1,8 @@
+---
+aap_organizations:
+  - name: Online Shopping
+    description: |-
+      {%- raw -%}
+
+      {%- endraw -%}
+...

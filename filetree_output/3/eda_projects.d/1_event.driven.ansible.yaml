@@ -1,0 +1,9 @@
+---
+eda_projects:
+  - name: event.driven.ansible
+    description: my awesome project
+    organization: "3"
+    scm_type: git
+    scm_branch: ""
+    scm_refspec: ""
+...

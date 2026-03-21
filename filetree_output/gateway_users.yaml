@@ -1,0 +1,188 @@
+---
+aap_user_accounts:
+  - username: admin
+    email: test@example.com
+    first_name: ""
+    last_name: ""
+    password: '{{ vaulted_gateway_users_admin_password }}'
+    is_superuser: "True"
+    authenticators:
+      - 1
+    authenticator_uid: admin
+  - username: aap_operator_service_account
+    email: test@example.com
+    first_name: ""
+    last_name: ""
+    password: '{{ vaulted_gateway_users_aap_operator_service_account_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: apd-admin
+    email: apd-admin@example.com
+    first_name: ""
+    last_name: ""
+    password: '{{ vaulted_gateway_users_apd-admin_password }}'
+    is_superuser: "False"
+    authenticators: []
+    authenticator_uid: ""
+  - username: eames
+    email: ames@redhat.com
+    first_name: Eric
+    last_name: Ames
+    password: '{{ vaulted_gateway_users_eames_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: mlowcher
+    email: mlowcher@redhat.com
+    first_name: Mark
+    last_name: Lowcher
+    password: '{{ vaulted_gateway_users_mlowcher_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: fchua
+    email: fchua@redhat.com
+    first_name: Faith
+    last_name: Chua
+    password: '{{ vaulted_gateway_users_fchua_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: zleblanc
+    email: zleblanc@redhat.com
+    first_name: Zach
+    last_name: Leblanc
+    password: '{{ vaulted_gateway_users_zleblanc_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: sgallegos
+    email: sgallegos@redhat.com
+    first_name: Shad
+    last_name: Gallegos
+    password: '{{ vaulted_gateway_users_sgallegos_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: gwormmee
+    email: gwormmee@redhat.com
+    first_name: Greg
+    last_name: Wormmeester
+    password: '{{ vaulted_gateway_users_gwormmee_password }}'
+    is_superuser: "False"
+    authenticators: []
+    authenticator_uid: ""
+  - username: mgilber
+    email: gilbert@redhat.com
+    first_name: Mike
+    last_name: Gilbert
+    password: '{{ vaulted_gateway_users_mgilber_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: mallmen
+    email: mallmen@redhat.com
+    first_name: Mike
+    last_name: Allmen
+    password: '{{ vaulted_gateway_users_mallmen_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: netops
+    email: netops@example.com
+    first_name: Network
+    last_name: Operations
+    password: '{{ vaulted_gateway_users_netops_password }}'
+    is_superuser: "False"
+    authenticators: []
+    authenticator_uid: ""
+  - username: netops_admin
+    email: netops@example.com
+    first_name: Team
+    last_name: Admin
+    password: '{{ vaulted_gateway_users_netops_admin_password }}'
+    is_superuser: "False"
+    authenticators: []
+    authenticator_uid: ""
+  - username: bhinson
+    email: bhinson@redhat.com
+    first_name: Brad
+    last_name: Hinson
+    password: '{{ vaulted_gateway_users_bhinson_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: agarrett
+    email: agarrett@redhat.com
+    first_name: Andy
+    last_name: Garrett
+    password: '{{ vaulted_gateway_users_agarrett_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: dasimmon
+    email: dasimmon@redhat.com
+    first_name: Dan
+    last_name: Simmons
+    password: '{{ vaulted_gateway_users_dasimmon_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: jason.horn
+    email: jason.horn@redhat.com
+    first_name: Jason
+    last_name: Horn
+    password: '{{ vaulted_gateway_users_jason.horn_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: mhooper
+    email: mhooper@redhat.com
+    first_name: Mark
+    last_name: Hooper
+    password: '{{ vaulted_gateway_users_mhooper_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: sazed
+    email: sazed@redhat.com
+    first_name: Sohaib
+    last_name: Azed
+    password: '{{ vaulted_gateway_users_sazed_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: aschoenfeld
+    email: aschoenf@redhat.com
+    first_name: Andrew
+    last_name: Schoenfeld
+    password: '{{ vaulted_gateway_users_aschoenfeld_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: tcoulter
+    email: tcoulter@redhat.com
+    first_name: Timothy
+    last_name: Coulter
+    password: '{{ vaulted_gateway_users_tcoulter_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: cnorvill
+    email: cnorvill@redhat.com
+    first_name: Christopher
+    last_name: Norville
+    password: '{{ vaulted_gateway_users_cnorvill_password }}'
+    is_superuser: "True"
+    authenticators: []
+    authenticator_uid: ""
+  - username: _token_service_user
+    email: ""
+    first_name: ""
+    last_name: ""
+    password: Password Disabled
+    is_superuser: "False"
+    authenticators: []
+    authenticator_uid: ""
+...

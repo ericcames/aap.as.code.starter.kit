@@ -1,0 +1,11 @@
+---
+controller_credentials:
+  - name: registry.redhat.io
+    credential_type: Container Registry
+    organization: IT Service Automation
+    inputs:
+      host: registry.redhat.io
+      password: '{{ vaulted_controller_credentials_registry_redhat_io_password }}'
+      username: zigfreed
+      verify_ssl: True
+...

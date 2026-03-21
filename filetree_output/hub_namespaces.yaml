@@ -1,0 +1,63 @@
+---
+hub_namespaces:
+  - name: containers
+    company: ""
+    email: ""
+    avatar_url: https://aap-aap.apps.cluster-4s42h-1.dynamic.redhatworkshops.io/api/galaxy/pulp/api/v3/content/ansible/namespaces/019d0d5a-e413-78be-91d8-3ee0476c0905/avatar/
+    description: ""
+    links: ""
+    groups: []
+    users: []
+    resources: |
+      ""
+  - name: ericcames
+    company: ""
+    email: ""
+    avatar_url: https://aap-aap.apps.cluster-4s42h-1.dynamic.redhatworkshops.io/api/galaxy/pulp/api/v3/content/ansible/namespaces/019d0d5a-e43c-7d2f-90a4-d9499d4be69f/avatar/
+    description: ""
+    links: ""
+    groups: []
+    users: []
+    resources: |
+      ""
+  - name: community
+    company: ""
+    email: ""
+    avatar_url: ""
+    description: ""
+    links: ""
+    groups: []
+    users: []
+    resources: |
+      ""
+  - name: infra
+    company: Red Hat
+    email: ""
+    avatar_url: ""
+    description: ""
+    links: ""
+    groups: []
+    users: []
+    resources: |
+      ""
+  - name: redhat
+    company: Red Hat
+    email: ""
+    avatar_url: https://aap-aap.apps.cluster-4s42h-1.dynamic.redhatworkshops.io/api/galaxy/pulp/api/v3/content/ansible/namespaces/019d0d5b-1eea-7e44-906e-17ad0c950e65/avatar/
+    description: ""
+    links: ""
+    groups: []
+    users: []
+    resources: |
+      ""
+  - name: ansible
+    company: Red Hat
+    email: ""
+    avatar_url: https://aap-aap.apps.cluster-4s42h-1.dynamic.redhatworkshops.io/api/galaxy/pulp/api/v3/content/ansible/namespaces/019d0d5b-1ee0-7dfb-8974-5e21a0cb1a60/avatar/
+    description: ""
+    links: ""
+    groups: []
+    users: []
+    resources: |
+      ""
+...
