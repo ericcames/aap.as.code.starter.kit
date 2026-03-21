@@ -99,11 +99,12 @@
         chdir: "{{ local_repo }}"
       ansible.builtin.shell: git commit -am 'Changed'
 
-    - name: Find filetree_output
-      ansible.builtin.find:
-        paths: "{{ local_repo }}"
-        recurse: yes
-        file_type: directory
+    - name: Push the changes
+      run_once: true
+      when: software_repository is defined
+      args:
+        chdir: "{{ local_repo }}"
+      ansible.builtin.shell: git push
 
     - name: Remove my token
       ansible.platform.token:
