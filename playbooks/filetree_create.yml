@@ -64,7 +64,7 @@
       vars:
         output_path: "{{ local_repo }}/filetree_output_new"
         input_tag:
-          - all
+          - controller_projects
         valid_tags:
           - all
           - controller
