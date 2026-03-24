@@ -1,0 +1,8 @@
+---
+controller_credentials:
+  - name: Eric Ames
+    credential_type: Vault
+    organization: ORGANIZATIONLESS
+    inputs:
+      vault_password: '{{ vaulted_controller_credentials_eric_ames_vault_password }}'
+...

@@ -1,0 +1,12 @@
+---
+controller_credentials:
+  - name: my api tokens
+    description: |-
+      {%- raw -%}
+      Demo custom Credentials
+      {%- endraw -%}
+    credential_type: My API KEYS
+    organization: IT Service Automation
+    inputs:
+      DYNATRACE_API_KEY: '{{ vaulted_controller_credentials_my_api_tokens_dynatrace_api_key }}'
+...

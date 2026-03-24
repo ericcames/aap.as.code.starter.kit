@@ -1,0 +1,9 @@
+---
+eda_event_streams:
+  - name: ServiceNow Event Stream
+    test_mode: False
+    additional_data_headers: ""
+    organization: IT Service Automation
+    credential_name: ServiceNow Event Stream
+    event_stream_type: snow
+...

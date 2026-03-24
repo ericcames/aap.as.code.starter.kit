@@ -1,0 +1,8 @@
+---
+aap_organizations:
+  - name: Data Center Operations
+    description: |-
+      {%- raw -%}
+
+      {%- endraw -%}
+...

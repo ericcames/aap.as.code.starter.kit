@@ -1,0 +1,9 @@
+---
+controller_credentials:
+  - name: AWS
+    credential_type: Amazon Web Services
+    organization: Ansible Product Demos (APD)
+    inputs:
+      password: '{{ vaulted_controller_credentials_aws_password }}'
+      username: AKIATI7PYYDG72S2BNTS
+...

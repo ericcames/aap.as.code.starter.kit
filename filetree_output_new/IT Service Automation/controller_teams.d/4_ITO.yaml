@@ -1,0 +1,9 @@
+---
+aap_teams:
+  - name: ITO
+    description: |-
+      {%- raw -%}
+      IT Operations
+      {%- endraw -%}
+    organization: IT Service Automation
+...

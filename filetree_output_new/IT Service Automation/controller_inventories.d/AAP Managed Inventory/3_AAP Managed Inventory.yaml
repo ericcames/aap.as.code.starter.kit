@@ -1,0 +1,10 @@
+---
+controller_inventories:
+  - name: AAP Managed Inventory
+    description: |-
+      {%- raw -%}
+      Daily Demo Inventory
+      {%- endraw -%}
+    organization: IT Service Automation
+    prevent_instance_group_fallback: False
+...

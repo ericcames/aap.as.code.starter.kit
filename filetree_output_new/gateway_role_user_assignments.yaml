@@ -1,0 +1,12 @@
+---
+gateway_role_user_assignments:
+  - role_definition: Credential Admin
+    object_id: "1"
+    user: admin
+  - role_definition: Team Member
+    object_id: "1"
+    user: netops
+  - role_definition: Team Admin
+    object_id: "1"
+    user: netops_admin
+...

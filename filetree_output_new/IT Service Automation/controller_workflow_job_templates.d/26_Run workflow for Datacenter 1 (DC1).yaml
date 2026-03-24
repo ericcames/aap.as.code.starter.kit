@@ -1,0 +1,29 @@
+---
+controller_workflows:
+  - name: Run workflow for Datacenter 1 (DC1)
+    organization: IT Service Automation
+    simplified_workflow_nodes:
+      - identifier: DC1 - Infrastructure Management (Terraform)
+        workflow_job_template: Run workflow for Datacenter 1 (DC1)
+        unified_job_template: DC1 - Infrastructure Management (Terraform)
+        limit: ""
+        organization: IT Service Automation
+        all_parents_must_converge: "False"
+        success_nodes:
+          - DC1 - Satellite Setup
+      - identifier: DC1 - Satellite Setup
+        workflow_job_template: Run workflow for Datacenter 1 (DC1)
+        unified_job_template: DC1 - Satellite Setup
+        limit: ""
+        organization: IT Service Automation
+        all_parents_must_converge: "False"
+    ask_variables_on_launch: "False"
+    allow_simultaneous: "False"
+    scm_branch: ""
+    limit: ""
+    ask_limit_on_launch: false
+    ask_inventory_on_launch: false
+    webhook_service: ""
+    extra_vars: ""
+    survey_enabled: false
+...

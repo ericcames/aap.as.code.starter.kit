@@ -1,0 +1,10 @@
+---
+controller_inventories:
+  - name: Datacenter 1
+    description: |-
+      {%- raw -%}
+      Demo Datacenter
+      {%- endraw -%}
+    organization: IT Service Automation
+    prevent_instance_group_fallback: False
+...
