@@ -65,9 +65,9 @@
         output_path: "{{ local_repo }}/filetree_output_new"
         input_tag:
           - controller_projects
-
         valid_tags:
           - all
+          - controller_projects
       ansible.builtin.include_role:
         name: infra.aap_configuration_extended.filetree_create
 
