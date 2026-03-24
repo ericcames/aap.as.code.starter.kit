@@ -1,6 +1,0 @@
----
-controller_inventories:
-  - name: Ansible Product Demos Inventory
-    organization: Ansible Product Demos (APD)
-    prevent_instance_group_fallback: False
-...

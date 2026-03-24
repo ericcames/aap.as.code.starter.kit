@@ -1,9 +1,0 @@
----
-controller_credentials:
-  - name: Red Hat Customer Portal
-    credential_type: Red Hat Customer Portal
-    organization: IT Service Automation
-    inputs:
-      user: zigfreed
-      password: '{{ vaulted_controller_credentials_red_hat_customer_portal_password }}'
-...

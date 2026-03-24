@@ -1,8 +1,0 @@
----
-aap_organizations:
-  - name: Default
-    description: |-
-      {%- raw -%}
-      The default organization for Ansible Automation Platform
-      {%- endraw -%}
-...

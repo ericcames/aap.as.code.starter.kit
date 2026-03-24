@@ -1,8 +1,0 @@
----
-aap_organizations:
-  - name: Storage
-    description: |-
-      {%- raw -%}
-
-      {%- endraw -%}
-...

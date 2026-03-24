@@ -1,9 +1,0 @@
----
-aap_teams:
-  - name: Network
-    description: |-
-      {%- raw -%}
-      The Network Team
-      {%- endraw -%}
-    organization: IT Service Automation
-...

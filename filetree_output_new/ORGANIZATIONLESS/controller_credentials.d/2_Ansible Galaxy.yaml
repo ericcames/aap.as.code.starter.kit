@@ -1,8 +1,0 @@
----
-controller_credentials:
-  - name: Ansible Galaxy
-    credential_type: Ansible Galaxy/Automation Hub API Token
-    organization: ORGANIZATIONLESS
-    inputs:
-      url: https://galaxy.ansible.com/
-...
