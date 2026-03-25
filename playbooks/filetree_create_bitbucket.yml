@@ -1,0 +1,178 @@
+---
+- name: Export controller configs
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  vars:
+    software_repository: "https://{{ git_name }}:{{ personal_access_token }}@bitbucket.example.local/scm/aap.as.code.git"
+    personal_access_token: git_hub_token
+    local_repo: /var/tmp/bitbucket
+    git_name: ericcames
+    git_email: eames@redhat.com
+
+  tasks:
+
+
+    - name: Determine that both AAP and Machine credentials are set
+      ansible.builtin.assert:
+        that:
+          - "lookup('ansible.builtin.env', 'CONTROLLER_USERNAME') !=''"
+          - "lookup('ansible.builtin.env', 'CONTROLLER_HOST') !=''"
+          - "lookup('ansible.builtin.env', 'CONTROLLER_PASSWORD') !=''"
+        fail_msg:
+          - "Red Hat Ansible Automation Platform credential is not set"
+          - "Please assign correct credentials to the Job Template"
+
+    - name: Create a new token
+      ansible.platform.token:
+        aap_hostname: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
+        aap_username: "{{ lookup('ansible.builtin.env', 'CONTROLLER_USERNAME') }}"
+        aap_password: "{{ lookup('ansible.builtin.env', 'CONTROLLER_PASSWORD') }}"
+        aap_validate_certs: false
+        description: Controller export
+        scope: write
+        state: present
+
+    - name: Printout my token
+      ansible.builtin.debug:
+        msg:
+          - "{{ ansible_facts['aap_token']['token'] }}"
+          - "{{ aap_username }}"
+
+    - name: Set instance identifier from AAP controller host
+      ansible.builtin.set_fact:
+        aap_instance: "{{ lookup('env', 'CONTROLLER_HOST') | regex_replace('https?://', '') | replace('.', '_') }}"
+
+    - name: Dump aap_instance
+      ansible.builtin.debug:
+        var: aap_instance
+
+    - name: "Set the oauth token to be used since now"
+      ansible.builtin.set_fact:
+        aap_oauthtoken: "{{ ansible_facts['aap_token']['token'] }}"
+
+    - name: no ssl verify for git
+      ansible.builtin.shell: "git config --global http.sslVerify false"
+
+    - name: clone the repo using shell commands
+      environment:
+        GIT_SSL_NO_VERIFY: "true"
+      ansible.builtin.shell: "git clone {{ software_repository }} /var/tmp/bitbucket/"
+      register: clone_result
+
+    - name: Printout the clone result
+      ansible.builtin.debug:
+        var: clone_result
+
+    - name: Create a directory if it does not exist
+      ansible.builtin.file:
+        path: "{{ local_repo }}/aap_config_files/{{ aap_instance }}"
+        state: directory
+        mode: '0755'
+
+    - name: Export all objects
+      vars:
+        output_path: "{{ local_repo }}/aap_config_files/{{ aap_instance }}"
+        input_tag:
+          - controller
+          - gateway
+          - hub
+        valid_tags:
+          - all
+          - controller
+          - controller_applications
+          - controller_credential_types
+          - controller_credentials
+          - controller_execution_environments
+          - controller_gateway_authenticator
+          - controller_gateway_authenticator_maps
+          - controller_groups
+          - controller_hosts
+          - controller_instance_groups
+          - controller_inventories
+          - controller_inventory_sources
+          - controller_job_templates
+          - controller_labels
+          - controller_notification_templates
+          - controller_organizations
+          - controller_projects
+          - controller_roles
+          - controller_schedules
+          - controller_settings
+          - controller_teams
+          - controller_users
+          - controller_workflow_job_templates
+          - gateway
+          - gateway_applications
+          - gateway_authenticator_maps
+          - gateway_authenticators
+          - gateway_http_ports
+          - gateway_organizations
+          - gateway_role_definitions
+          - gateway_role_user_assignments
+          - gateway_routes
+          - gateway_service_clusters
+          - gateway_service_keys
+          - gateway_service_nodes
+          - gateway_services
+          - gateway_settings
+          - gateway_teams
+          - gateway_users
+          - hub
+          - hub_collection_remotes
+          - hub_collection_repositories
+          - hub_collections
+          - hub_ee_registries
+          - hub_ee_repositories
+          - hub_execution_environments
+          - hub_namespaces
+          - hub_orgs
+          - hub_role_definitions
+          - hub_role_user_assignments
+          - hub_teams
+          - hub_users
+      ansible.builtin.include_role:
+        name: infra.aap_configuration_extended.filetree_create
+
+    - name: Add any new playbooks to the software_repository
+      changed_when: false
+      run_once: true
+      args:
+        chdir: "{{ local_repo }}"
+      ansible.builtin.shell: git add --all
+
+    - name: Get the status of the repository
+      register: status_results
+      changed_when: false
+      ignore_errors: true
+      run_once: true
+      args:
+        chdir: "{{ local_repo }}"
+      ansible.builtin.shell: git status
+
+    - name: Commit the changes
+      when: status_results.stdout is search('Changes')
+      run_once: true
+      environment:
+        GIT_COMMITTER_NAME: "{{ git_name | default(omit) }}"
+        GIT_COMMITTER_EMAIL: "{{ git_email | default(omit) }}"
+        GIT_AUTHOR_NAME: "{{ git_name | default(omit) }}"
+        GIT_AUTHOR_EMAIL: "{{ git_email | default(omit) }}"
+      args:
+        chdir: "{{ local_repo }}"
+      ansible.builtin.shell: git commit -am 'Changed'
+
+    - name: Push the changes
+      run_once: true
+      when: software_repository is defined
+      args:
+        chdir: "{{ local_repo }}"
+      ansible.builtin.shell: git push
+
+    - name: Remove my token
+      ansible.platform.token:
+        aap_hostname: "{{ lookup('ansible.builtin.env', 'CONTROLLER_HOST') }}"
+        existing_token: "{{ ansible_facts['aap_token'] }}"
+        aap_token: "{{ ansible_facts['aap_token']['token'] }}"
+        aap_validate_certs: false
+        state: absent
