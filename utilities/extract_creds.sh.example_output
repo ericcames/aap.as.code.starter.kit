@@ -1,0 +1,120 @@
+eames@eames-thinkpadp1gen3 utilities $ ./extract_creds.sh /home/eames/git-repos/aap.as.code.starter.kit/filetree_output
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/Ansible Product Demos (APD)/controller_credentials.d/3_AAP Credential.yaml
+  username: admin
+  password: {{ vaulted_controller_credentials_aap_credential_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/Ansible Product Demos (APD)/controller_credentials.d/4_APD Machine Credential.yaml
+  username: admin
+  password: {{ vaulted_controller_credentials_apd_machine_credential_password }}
+  ssh_key_data: {{ vaulted_controller_credentials_apd_machine_credential_ssh_key_data }}
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/Ansible Product Demos (APD)/controller_credentials.d/6_AWS.yaml
+  username: AKIATI7PYYDG72S2BNTS
+  password: {{ vaulted_controller_credentials_aws_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/10_AWS Machine Credential.yaml
+  username: ec2-user
+  password: <not found>
+  ssh_key_data: {{ vaulted_controller_credentials_aws_machine_credential_ssh_key_data }}
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/11_AWS Machine Credential - Ubuntu.yaml
+  username: ubuntu
+  password: <not found>
+  ssh_key_data: {{ vaulted_controller_credentials_aws_machine_credential___ubuntu_ssh_key_data }}
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/13_Red Hat Customer Portal.yaml
+  username: <not found>
+  password: {{ vaulted_controller_credentials_red_hat_customer_portal_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/14_registry.redhat.io.yaml
+  username: zigfreed
+  password: {{ vaulted_controller_credentials_registry_redhat_io_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/15_quay.io.yaml
+  username: zigfreed
+  password: {{ vaulted_controller_credentials_quay_io_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/16_Daily Demo Windows.yaml
+  username: ec2-user
+  password: {{ vaulted_controller_credentials_daily_demo_windows_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/17_Daily Demo F5.yaml
+  username: admin
+  password: <not found>
+  ssh_key_data: {{ vaulted_controller_credentials_daily_demo_f5_ssh_key_data }}
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/18_Network F5.yaml
+  username: admin
+  password: {{ vaulted_controller_credentials_network_f5_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/IT Service Automation/controller_credentials.d/19_Daily Demo F5 Network.yaml
+  username: admin
+  password: {{ vaulted_controller_credentials_daily_demo_f5_network_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/ORGANIZATIONLESS/controller_credentials.d/1_Demo Credential.yaml
+  username: admin
+  password: <not found>
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/controller_credential_types.yaml
+  username: {%- raw -%} {{ username }} {%- endraw -%}
+  password: {%- raw -%} {{ password }} {%- endraw -%}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/eda_credentials.yaml
+  username: admin
+zigfreed
+  password: {{ vaulted_eda_credentials_controller_credential_password }}
+{{ vaulted_eda_credentials_registry_redhat_io_password }}
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
+
+File: /home/eames/git-repos/aap.as.code.starter.kit/filetree_output/gateway_users.yaml
+  username: <not found>
+  password: {{ vaulted_gateway_users_admin_password }}
+{{ vaulted_gateway_users_aap_operator_service_account_password }}
+{{ vaulted_gateway_users_apd-admin_password }}
+{{ vaulted_gateway_users_eames_password }}
+{{ vaulted_gateway_users_mlowcher_password }}
+{{ vaulted_gateway_users_fchua_password }}
+{{ vaulted_gateway_users_zleblanc_password }}
+{{ vaulted_gateway_users_sgallegos_password }}
+{{ vaulted_gateway_users_gwormmee_password }}
+{{ vaulted_gateway_users_mgilber_password }}
+{{ vaulted_gateway_users_mallmen_password }}
+{{ vaulted_gateway_users_netops_password }}
+{{ vaulted_gateway_users_netops_admin_password }}
+{{ vaulted_gateway_users_bhinson_password }}
+{{ vaulted_gateway_users_agarrett_password }}
+{{ vaulted_gateway_users_dasimmon_password }}
+{{ vaulted_gateway_users_jason.horn_password }}
+{{ vaulted_gateway_users_mhooper_password }}
+{{ vaulted_gateway_users_sazed_password }}
+{{ vaulted_gateway_users_aschoenfeld_password }}
+{{ vaulted_gateway_users_tcoulter_password }}
+{{ vaulted_gateway_users_cnorvill_password }}
+Password Disabled
+  ssh_key_data: <not found>
+  ssh_key_unlock: <not found>
