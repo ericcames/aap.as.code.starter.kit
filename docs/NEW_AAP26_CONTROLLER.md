@@ -22,11 +22,10 @@ New Ansible Automation Platform 2.6 available at https://demo.redhat.com
 ![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26operinstall1.png "Install1")
 ![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26ocpoperinstalled.png "Installed")
 
-4. Install Ansible Automation Platform - Complete setup
+4. Install Ansible Controller
 
-![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26aapinstall26.png "AAP 26 Install")
-![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26aapinstallcomplete.png "AAP 26 Install Complete")
+![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26controllerinstall.png "Controller Install")
 
-- Look for Ansible Automation Platform
+- Look for Ansible Controller
 
-![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26aapplat.png "AAP 26 Install Complete")
+![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26urlpasswd.png "AAP 26 Install Complete")
