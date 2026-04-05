@@ -9,6 +9,9 @@ New Ansible Automation Platform 2.6 available at https://demo.redhat.com
 
 2. Login to Openshift User Interface
 
+- Look for the "ROSA Openshift Console URL"
+- Look for "CLuster-Admin Access to ROSA" for the credentials
+
 ![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26ocpws.png "Workshop UI")
 ![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26ocplogin.png "OCP Login")
 
@@ -21,5 +24,5 @@ New Ansible Automation Platform 2.6 available at https://demo.redhat.com
 
 4. Install Ansible Automation Platform - Complete setup
 
-![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26install26.png "AAP 26 Install")
-![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26installcomplete.png "AAP 26 Install Complete")
+![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26aapinstall26.png "AAP 26 Install")
+![alt text](https://github.com/ericcames/aap.as.code.starter.kit/blob/main/docs/images/aap26aapinstallcomplete.png "AAP 26 Install Complete")
